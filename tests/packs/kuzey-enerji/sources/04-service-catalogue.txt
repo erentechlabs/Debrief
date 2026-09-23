@@ -1,0 +1,35 @@
+=== KURUMSAL HIZMET KATALOGU ALINTISI (SENTETIK TEST VERISI) ===
+Belge: Unified Support - Proaktif Hizmet Katalogu, Surum 2026.3
+Yayin: Kurumsal katalog, genel dagitim
+Alinti tarihi: 12 Eylul 2026
+
+-----------------------------------------------------------------
+Katalog no: PRO-IDR-204
+Hizmet adi: Kimlik Dayaniklilik Tasarim Calistayi
+Bolum: Katalog bolum 4.2
+Kapsam: Kimlik altyapisinin coklu bolge dayanikliligi icin mevcut durum
+degerlendirmesi, devretme tasarimi ve test plani hazirlanmasi. Iki gunluk
+calistay formatinda, muhendis liderliginde yurutulur.
+Uygunluk: Unified Support Core, Advanced ve Enhanced seviyelerinde proaktif
+saat karsiliginda sunulur. Ek lisans gerektirmez.
+-----------------------------------------------------------------
+Katalog no: PRO-PAM-118
+Hizmet adi: Ayricalikli Erisim Guvenlik Degerlendirmesi
+Bolum: Katalog bolum 6.1
+Kapsam: Ayricalikli hesap envanteri, kalici rollerin tespiti, zaman sinirli
+yukseltme modeline gecis plani ve cok faktorlu dogrulama zorunlulugunun
+uygulanmasi icin yol haritasi.
+Uygunluk: Unified Support Core, Advanced ve Enhanced seviyelerinde proaktif
+saat karsiliginda sunulur. Ek lisans gerektirmez.
+-----------------------------------------------------------------
+Katalog no: PRO-BCR-077
+Hizmet adi: Is Surekliligi Geri Donus Tatbikati
+Bolum: Katalog bolum 7.3
+Kapsam: Yedekten geri donus senaryosunun kontrollu bir bakim penceresinde
+uctan uca calistirilmasi, sure olcumu ve bulgu raporu.
+Uygunluk: Unified Support Advanced ve Enhanced seviyelerinde proaktif saat
+karsiliginda sunulur. Ayri bakim penceresi planlanmasi gerekir.
+-----------------------------------------------------------------
+
+NOT: Bu katalogda SAP S/4HANA gecis hizmeti ve Copilot for Security
+kapsamli bir proaktif hizmet tanimi bulunmamaktadir.

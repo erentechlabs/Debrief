@@ -1,0 +1,23 @@
+Merhaba, Kuzey Enerji Holding için yönetim kurulu sunumuna girecek bir
+yönetici karar özeti hazırlaman lazım. Elimde dört şey var, hepsini
+ekliyorum:
+
+1) Müşteriyle olan mail zinciri (saat durumu ve talepler)
+2) 11 Eylül teknik durum toplantısının transkripti
+3) Mühendisimizin saha çalışma notu
+4) Unified proaktif hizmet kataloğundan ilgili bölüm
+
+Beklediğim çıktı: müşteriye doğrudan verebileceğim, Türkçe, en fazla
+2 sayfalık bir PDF. İçinde mutlaka şunlar olsun:
+
+- Unified sözleşmesindeki saat dökümü: toplam kaç saat, kaçı kullanıldı,
+  kaçı planlı, kaç saat plansız duruyor.
+- Ağustos kesintisiyle ilgili teknik bulgular ve riskler.
+- Somut aksiyon önerileri — ama sadece kataloğa dayanan, gerçekten bizim
+  sunabileceğimiz hizmetler olsun. Uydurma ya da doğrulanmamış bir şey
+  yazma.
+
+Müşteri yeni lisans alamıyor, mevcut sözleşme içinde kalmamız gerekiyor.
+
+Bittiğinde bana tek mesajda PDF'i ver, ara ara "şunu yapıyorum" diye
+yazma. Hiçbir yere mail/mesaj gönderme, ben kendim göndereceğim.

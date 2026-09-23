@@ -1,0 +1,2 @@
+﻿customer,agreement,program_id,as_of_date,contracted_hours,consumed_hours,scheduled_hours,unplanned_remaining_hours,contract_start,contract_end,source,notes
+Northwind Energy Holding,Unified Enhanced,RMOT-SYNTHETIC-0001,2026-09-01,400,268,90,42,2026-01-01,2026-12-31,SYNTHETIC SAMPLE - not real system data,Generated as a format example and for testing. Not a real customer. 400 - 268 - 90 = 42

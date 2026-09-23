@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.1",
+  "locale": "en",
+  "customer": "Northwind Energy Holding",
+  "program": "Microsoft Unified - Technical Status Review",
+  "confirmed_date": "2026-09-11",
+  "classification": "synthetic",
+  "classification_evidence": {
+    "basis": "synthetic_declaration",
+    "reference": "Folder README declares every file in the demo set synthetic"
+  },
+  "single_customer_confirmed": true,
+  "excluded_customer_names": [
+    "West Textile Inc."
+  ],
+  "internal_notes": "Claim-to-source mapping: outage and findings from the transcript and field note; services verified against catalogue sections 4.2, 6.1 and 7.3.\nHours position excluded: the email states 42 unplanned hours, the field note 48 from an earlier snapshot; entitlement data is internal.\nField note sections 5 and 6 (internal assessment, personal view) excluded; printed confidentiality marking to be confirmed with the author.\nSAP S/4HANA excluded: no catalogue service, and the customer asked for it to be left off in the meeting.\nDelivery lead asked to send the brief directly; nothing was sent, distribution stays with the CSAM.",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Closeout meeting transcript",
+      "section": "Session of 11 September 2026",
+      "kind": "context",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Verbatim transcript of the technical status review, read in full"
+    },
+    {
+      "id": "S2",
+      "title": "Engineer field note",
+      "section": "Findings table, items F1 to F4",
+      "kind": "context",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Sections 1 to 4 only; sections 5 and 6 are internal and excluded"
+    },
+    {
+      "id": "S3",
+      "title": "Unified proactive service catalogue",
+      "section": "Catalogue section 4.2",
+      "kind": "service",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Service definition, scope and eligibility for the identity resilience workshop"
+    },
+    {
+      "id": "S4",
+      "title": "Unified proactive service catalogue",
+      "section": "Catalogue section 6.1",
+      "kind": "service",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Service definition, scope and eligibility for the privileged access assessment"
+    },
+    {
+      "id": "S5",
+      "title": "Unified proactive service catalogue",
+      "section": "Catalogue section 7.3",
+      "kind": "service",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Service definition, scope and eligibility for the restore drill"
+    }
+  ],
+  "executive_summary": [
+    {
+      "text": "On the evening of 19 August 2026 the authentication service was unavailable for roughly 3 hours and 40 minutes; the dealer portal and the field application were affected. The review, run from 25 August to 10 September, shows the cause was not a single fault but four structural gaps in resilience, privileged access and operational monitoring.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "All four proposed actions can be delivered through proactive services already included in the current Unified agreement; none of them requires buying additional licences.",
+      "source_ids": [
+        "S1",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "text": "The identity infrastructure depends on a single region with no automatic failover to a second region. The architecture review recorded this as a high-severity finding; it is what directly extended the duration of the outage.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "Multi-factor authentication is not enforced on 14 privileged accounts, and 6 of those hold a permanent administrator role. The access inventory recorded this as a high-severity finding.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "Backups are taken regularly, but no restore drill has been carried out in the last 11 months. The actual recovery time is therefore unmeasured today; recorded as a medium-severity finding.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "Monitoring alerts are generated but no one owns the follow-up. During the August outage the alert was raised at 20:12 and the team noticed at 21:05; mean time to detect was measured at 53 minutes.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "risks_opportunities": [
+    {
+      "kind": "risk",
+      "text": "Taken together, the single-region dependency and the 53-minute detection time make it realistic that a similar identity outage recurs and again lasts for hours.",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "Permanent administrator roles and missing multi-factor authentication meet in the same accounts; if one privileged account is compromised, the impact spreads across the production environment.",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "kind": "opportunity",
+      "text": "Because every action fits inside the current agreement, concrete progress can be made during this year without waiting for the 2027 budget cycle.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "proposed_actions": [
+    {
+      "action": "Remove permanent administrator roles from privileged accounts, move to a time-bound elevation model, and enforce multi-factor authentication on all privileged accounts.",
+      "priority": "P1",
+      "owner": "Infrastructure management",
+      "timeframe": "0-30 days",
+      "success_criterion": "Multi-factor authentication becomes mandatory on all 14 privileged accounts and the number of permanent administrator roles falls from 6 to zero.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "action": "Address the second-region failover design for the identity infrastructure in a resilience workshop and produce the associated test plan.",
+      "priority": "P1",
+      "owner": "Infrastructure management",
+      "timeframe": "0-60 days",
+      "success_criterion": "An approved multi-region failover design and its test plan are delivered in writing.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "action": "Define an owned operational follow-up routine and an incident escalation threshold for monitoring alerts.",
+      "priority": "P2",
+      "owner": "Infrastructure management",
+      "timeframe": "0-60 days",
+      "success_criterion": "Mean time to detect falls from 53 minutes to below 15 minutes and every critical alert has a named owner.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "action": "Run the backup restore drill end to end in a separate maintenance window and record the measured recovery time.",
+      "priority": "P2",
+      "owner": "Infrastructure management",
+      "timeframe": "30-90 days",
+      "success_criterion": "The drill missing for 11 months is completed and the measured recovery time is documented in a findings report.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "service_matches": [
+    {
+      "name": "Identity Resilience Design Workshop",
+      "rationale": "Maps directly to the single-region dependency finding. The catalogue defines it as a two-day workshop, delivered against proactive hours and requiring no additional licence.",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "verification_source_ids": [
+        "S3"
+      ],
+      "verified": true,
+      "relevant": true
+    },
+    {
+      "name": "Privileged Access Security Assessment",
+      "rationale": "Covers permanent role identification, the transition plan to time-bound elevation and the multi-factor authentication roadmap; delivered against proactive hours with no additional licence.",
+      "source_ids": [
+        "S2",
+        "S4"
+      ],
+      "verification_source_ids": [
+        "S4"
+      ],
+      "verified": true,
+      "relevant": true
+    },
+    {
+      "name": "Business Continuity Restore Drill",
+      "rationale": "Covers the missing restore drill; delivered against proactive hours and requires a separate maintenance window to be scheduled.",
+      "source_ids": [
+        "S2",
+        "S5"
+      ],
+      "verification_source_ids": [
+        "S5"
+      ],
+      "verified": true,
+      "relevant": true
+    }
+  ]
+}

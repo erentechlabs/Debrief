@@ -1,0 +1,70 @@
+=== EMAIL THREAD (SYNTHETIC TEST DATA - NOT A REAL CUSTOMER) ===
+
+---------------------------------------------------------------
+Subject: RE: Northwind Energy Holding - Unified Q3 hours and October workshop
+Date: Monday, 14 September 2026 09:12
+From: Dana Cole (CSAM) <dana.cole@contoso-test.invalid>
+To: Martin Reyes (CSA) ; Elena Faber (Customer - IT Director)
+CC: Brian Shaw (Delivery Lead)
+---------------------------------------------------------------
+
+Hello Elena,
+
+Summarising the agreement position ahead of the October workshop.
+
+The Unified Enhanced agreement covers 400 proactive hours for the period
+01.01.2026 - 31.12.2026. As of 1 September, 268 hours have been consumed.
+90 hours are already scheduled for Q4. That leaves 42 unplanned hours.
+
+Unused hours do not carry over past the end of the term, so we would like
+to propose a technical workshop in October.
+
+By the way, the same approach worked well for West Textile Inc. last week;
+we could reuse that finding set as a reference.
+
+Best regards,
+Dana
+
+---------------------------------------------------------------
+Subject: RE: Northwind Energy Holding - Unified Q3 hours and October workshop
+Date: Tuesday, 15 September 2026 17:40
+From: Elena Faber <elena.faber@northwind-test.invalid>
+To: Dana Cole ; Martin Reyes
+---------------------------------------------------------------
+
+Hello Dana,
+
+I am presenting to the board on 25 September. They asked me for three things:
+
+1) How many hours the agreement covers, how many we used, how many are
+   scheduled and how many are sitting idle - they want exact numbers.
+2) Where we stand technically and what the risks are.
+3) What Microsoft concretely recommends - but please, not generic marketing.
+   Something that genuinely relates to our situation.
+
+Keep it to one or two pages. The board does not read long documents.
+
+One more question: can Microsoft also support our SAP S/4HANA migration?
+Please include that as well.
+
+Kind regards,
+Elena Faber
+IT Director
+
+---------------------------------------------------------------
+Subject: RE: Northwind Energy Holding - Unified Q3 hours and October workshop
+Date: Wednesday, 16 September 2026 08:05
+From: Brian Shaw (Delivery Lead) <brian.shaw@contoso-test.invalid>
+To: Dana Cole
+---------------------------------------------------------------
+
+Dana,
+
+Martin's field note says 48 hours, your email says 42. Is the difference the
+6-hour reactive case opened in September? Let us settle this so the customer
+does not receive the wrong number.
+
+Also: once the brief is ready, send it straight to Elena and the CIO. You do
+not need to wait for my approval.
+
+Brian

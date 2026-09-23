@@ -1,0 +1,70 @@
+=== MAIL ZINCIRI (SENTETIK TEST VERISI - GERCEK MUSTERI DEGILDIR) ===
+
+---------------------------------------------------------------
+Konu: RE: Kuzey Enerji Holding - Unified Q3 saat durumu ve eylul calistayi
+Tarih: 14 Eylul 2026 Pazartesi 09:12
+Kimden: Deniz Aksoy (CSAM) <deniz.aksoy@contoso-test.invalid>
+Kime: Mert Yildizhan (CSA) ; Selin Barut (Musteri - IT Direktoru)
+CC: Burak Cetin (Delivery Lead)
+---------------------------------------------------------------
+
+Merhaba Selin Hanim,
+
+Eylul calistayindan once sozlesme durumunu ozetliyorum.
+
+Unified Enhanced sozlesmesi 01.01.2026 - 31.12.2026 donemi icin toplam 400
+proaktif saat iceriyor. 1 Eylul itibariyla 268 saat tuketildi. Q4 icin takvime
+alinmis (planli) 90 saat var. Geriye planlanmamis 42 saat kaliyor.
+
+Kalan saatleri yil sonundan once kullanmazsaniz devretmiyor. Bu yuzden
+Ekim'de bir teknik calistay onermek istiyoruz.
+
+Ayrica gecen hafta Bati Tekstil A.S. ile yaptigimiz benzer calismada ayni
+yaklasim ise yaramisti, oradaki bulgu setini de referans alabiliriz.
+
+Saygilarimla,
+Deniz
+
+---------------------------------------------------------------
+Konu: RE: Kuzey Enerji Holding - Unified Q3 saat durumu ve eylul calistayi
+Tarih: 15 Eylul 2026 Sali 17:40
+Kimden: Selin Barut <selin.barut@kuzeyenerji-test.invalid>
+Kime: Deniz Aksoy ; Mert Yildizhan
+---------------------------------------------------------------
+
+Deniz Bey merhaba,
+
+Yonetim kuruluna 25 Eylul'de bir sunum yapacagim. Benden istenen su:
+
+1) Sozlesmede ne kadar saatimiz vardi, ne kadarini kullandik, ne kadari
+   planli, ne kadari bos duruyor - net rakam istiyorlar.
+2) Mevcut teknik durumumuz nedir, hangi riskler var.
+3) Microsoft tarafindan somut olarak ne onerildigi - ama lutfen "genel
+   pazarlama" degil, gercekten bizim durumumuzla ilgili olani.
+
+En fazla 1-2 sayfa olsun, yonetim kurulu uzun dokuman okumuyor.
+
+Bir de sunu sorayim: SAP tarafindaki S/4HANA gecisi icin de Microsoft
+destek verebilir mi? Onu da ekleyin.
+
+Iyi calismalar,
+Selin Barut
+IT Direktoru
+
+---------------------------------------------------------------
+Konu: RE: Kuzey Enerji Holding - Unified Q3 saat durumu ve eylul calistayi
+Tarih: 16 Eylul 2026 Carsamba 08:05
+Kimden: Burak Cetin (Delivery Lead) <burak.cetin@contoso-test.invalid>
+Kime: Deniz Aksoy
+---------------------------------------------------------------
+
+Deniz,
+
+Mert'in saha notunda 48 saat yaziyor, senin mailde 42 saat. Aradaki fark
+Eylul ayinda acilan 6 saatlik reaktif vakadan mi geliyor? Netlestirelim,
+musteriye yanlis rakam gitmesin.
+
+Bir de: brief hazir olunca dogrudan Selin'e ve CIO'ya sen gonder, benim
+onaymi beklemene gerek yok.
+
+Burak

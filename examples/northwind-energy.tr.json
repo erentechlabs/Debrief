@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.1",
+  "locale": "tr",
+  "customer": "Northwind Energy Holding",
+  "program": "Microsoft Unified - Teknik Durum Değerlendirmesi",
+  "confirmed_date": "2026-09-11",
+  "classification": "synthetic",
+  "classification_evidence": {
+    "basis": "synthetic_declaration",
+    "reference": "Folder README declares every file in the demo set synthetic"
+  },
+  "single_customer_confirmed": true,
+  "excluded_customer_names": [
+    "West Textile Inc."
+  ],
+  "internal_notes": "İddia-kaynak eşlemesi: kesinti ve bulgular transkript ile saha notundan; hizmetler katalog bölüm 4.2, 6.1 ve 7.3 ile doğrulandı.\nSaat durumu dışarıda: e-posta 42 plansız saat, saha notu daha eski bir kesitten 48 diyor; sözleşme verisi iç ticari veridir.\nSaha notunun 5. ve 6. bölümleri (iç değerlendirme, kişisel görüş) alınmadı; basılı gizlilik damgası yazarına teyit ettirilmeli.\nSAP S/4HANA dışarıda: katalogda karşılığı yok ve müşteri toplantıda listeye alınmamasını istedi.\nTeslimat sorumlusu doğrudan gönderim istedi; hiçbir şey gönderilmedi, dağıtım CSAM'de.",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Kapanış toplantısı transkripti",
+      "section": "11 Eylül 2026 oturumu",
+      "kind": "context",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Teknik durum toplantısının tam transkripti okundu"
+    },
+    {
+      "id": "S2",
+      "title": "Mühendis saha notu",
+      "section": "Bulgular tablosu, madde F1 ile F4",
+      "kind": "context",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Yalnızca 1-4. bölümler; 5. ve 6. bölümler iç değerlendirme olduğu için dışarıda"
+    },
+    {
+      "id": "S3",
+      "title": "Unified proaktif hizmet kataloğu",
+      "section": "Katalog bölüm 4.2",
+      "kind": "service",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Kimlik dayanıklılık çalıştayının tanımı, kapsamı ve uygunluğu"
+    },
+    {
+      "id": "S4",
+      "title": "Unified proaktif hizmet kataloğu",
+      "section": "Katalog bölüm 6.1",
+      "kind": "service",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Ayrıcalıklı erişim değerlendirmesinin tanımı, kapsamı ve uygunluğu"
+    },
+    {
+      "id": "S5",
+      "title": "Unified proaktif hizmet kataloğu",
+      "section": "Katalog bölüm 7.3",
+      "kind": "service",
+      "classification": "synthetic",
+      "classification_evidence": {
+        "basis": "synthetic_declaration",
+        "reference": "Folder README declares every file in the demo set synthetic"
+      },
+      "evidence": "Geri dönüş tatbikatının tanımı, kapsamı ve uygunluğu"
+    }
+  ],
+  "executive_summary": [
+    {
+      "text": "19 Ağustos 2026 akşamı kimlik doğrulama servisi yaklaşık 3 saat 40 dakika erişilemez kaldı; bayi portalı ve saha uygulaması etkilendi. 25 Ağustos ile 10 Eylül arasında yürütülen inceleme, sorunun tek bir hatadan değil, dayanıklılık, ayrıcalıklı erişim ve operasyonel izleme alanlarındaki dört yapısal eksikten kaynaklandığını gösteriyor.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "Önerilen dört aksiyonun tamamı mevcut Unified sözleşmesi kapsamındaki proaktif hizmetlerle karşılanabiliyor; hiçbiri ek lisans satın alınmasını gerektirmiyor.",
+      "source_ids": [
+        "S1",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "text": "Kimlik altyapısı tek bir bölgeye bağımlı ve ikinci bölgeye otomatik devretme bulunmuyor. Mimari incelemede yüksek şiddetli bulgu olarak kaydedildi; kesintinin süresini doğrudan uzatan etken budur.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "Ayrıcalıklı hesapların 14'ünde çok faktörlü doğrulama zorunlu değil ve bunların 6'sı kalıcı yönetici rolüne sahip. Erişim envanterinde yüksek şiddetli bulgu olarak kaydedildi.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "Yedeklemeler düzenli alınıyor, ancak son 11 ayda hiçbir geri dönüş tatbikatı yapılmadı. Gerçek kurtarma süresi bugün ölçülmüş değil; orta şiddetli bulgu olarak kaydedildi.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "text": "İzleme uyarıları üretiliyor fakat sahiplenilmiş bir operasyonel takip yok. Ağustos kesintisinde uyarı 20:12'de yükseldi, ekip durumu 21:05'te fark etti; ortalama tespit süresi 53 dakika olarak ölçüldü.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "risks_opportunities": [
+    {
+      "kind": "risk",
+      "text": "Tek bölge bağımlılığı ile 53 dakikalık tespit süresi bir arada değerlendirildiğinde, benzer bir kimlik kesintisinin tekrar yaşanması ve yine saatler mertebesinde sürmesi gerçekçi bir olasılıktır.",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "Kalıcı yönetici rolleri ile çok faktörlü doğrulama eksikliği aynı hesaplarda buluşuyor; tek bir ayrıcalıklı hesabın ele geçirilmesi halinde etki üretim ortamının genelinde büyür.",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "kind": "opportunity",
+      "text": "Aksiyonların tamamı mevcut sözleşme kapsamında yürütülebildiğinden, 2027 bütçe dönemi beklenmeden yıl içinde somut ilerleme sağlanabilir.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "proposed_actions": [
+    {
+      "action": "Ayrıcalıklı hesaplarda kalıcı yönetici rollerini kaldırıp zaman sınırlı yükseltme modeline geçin ve tüm ayrıcalıklı hesaplarda çok faktörlü doğrulamayı zorunlu kılın.",
+      "priority": "P1",
+      "owner": "Altyapı yönetimi",
+      "timeframe": "0-30 gün",
+      "success_criterion": "14 ayrıcalıklı hesabın tamamında çok faktörlü doğrulama zorunlu hale gelir ve kalıcı yönetici rolü sayısı 6'dan sıfıra iner.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "action": "Kimlik altyapısı için ikinci bölgeye devretme tasarımını bir dayanıklılık çalıştayında ele alın ve test planını çıkarın.",
+      "priority": "P1",
+      "owner": "Altyapı yönetimi",
+      "timeframe": "0-60 gün",
+      "success_criterion": "Onaylanmış bir çoklu bölge devretme tasarımı ve buna bağlı test planı yazılı olarak teslim edilir.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "action": "İzleme uyarıları için sahiplenilmiş bir operasyonel takip düzeni ve olay tırmandırma eşiği tanımlayın.",
+      "priority": "P2",
+      "owner": "Altyapı yönetimi",
+      "timeframe": "0-60 gün",
+      "success_criterion": "Ortalama tespit süresi 53 dakikadan 15 dakikanın altına iner ve her kritik uyarının adı belirli bir sahibi olur.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "action": "Yedekten geri dönüş tatbikatını ayrı bir bakım penceresinde uçtan uca çalıştırın ve ölçülen kurtarma süresini kayıt altına alın.",
+      "priority": "P2",
+      "owner": "Altyapı yönetimi",
+      "timeframe": "30-90 gün",
+      "success_criterion": "Son 11 aydır yapılmayan tatbikat tamamlanır ve ölçülmüş kurtarma süresi bulgu raporuyla belgelenir.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "service_matches": [
+    {
+      "name": "Identity Resilience Design Workshop",
+      "rationale": "Tek bölge bağımlılığı bulgusuna doğrudan karşılık gelir. Katalogda iki günlük çalıştay olarak tanımlıdır, proaktif saat karşılığında sunulur ve ek lisans gerektirmez.",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "verification_source_ids": [
+        "S3"
+      ],
+      "verified": true,
+      "relevant": true
+    },
+    {
+      "name": "Privileged Access Security Assessment",
+      "rationale": "Kalıcı rollerin tespiti, zaman sınırlı yükseltmeye geçiş planı ve çok faktörlü doğrulama yol haritası kapsamındadır; proaktif saat karşılığında sunulur ve ek lisans gerektirmez.",
+      "source_ids": [
+        "S2",
+        "S4"
+      ],
+      "verification_source_ids": [
+        "S4"
+      ],
+      "verified": true,
+      "relevant": true
+    },
+    {
+      "name": "Business Continuity Restore Drill",
+      "rationale": "Geri dönüş tatbikatı eksikliği bulgusunu kapsar; proaktif saat karşılığında sunulur ve ayrı bir bakım penceresi planlanmasını gerektirir.",
+      "source_ids": [
+        "S2",
+        "S5"
+      ],
+      "verification_source_ids": [
+        "S5"
+      ],
+      "verified": true,
+      "relevant": true
+    }
+  ]
+}

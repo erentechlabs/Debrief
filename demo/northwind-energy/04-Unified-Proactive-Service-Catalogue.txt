@@ -1,0 +1,35 @@
+=== CORPORATE SERVICE CATALOGUE EXTRACT (SYNTHETIC TEST DATA) ===
+Document: Unified Support - Proactive Service Catalogue, Version 2026.3
+Release: Corporate catalogue, general distribution
+Extracted: 12 September 2026
+
+-----------------------------------------------------------------
+Catalogue no: PRO-IDR-204
+Service name: Identity Resilience Design Workshop
+Section: Catalogue section 4.2
+Scope: Current-state assessment of multi-region resilience for identity
+infrastructure, failover design and preparation of a test plan. Delivered as
+a two-day workshop led by an engineer.
+Eligibility: Offered against proactive hours at Unified Support Core,
+Advanced and Enhanced levels. No additional licence required.
+-----------------------------------------------------------------
+Catalogue no: PRO-PAM-118
+Service name: Privileged Access Security Assessment
+Section: Catalogue section 6.1
+Scope: Privileged account inventory, identification of permanent roles,
+transition plan to a time-bound elevation model, and a roadmap for enforcing
+multi-factor authentication.
+Eligibility: Offered against proactive hours at Unified Support Core,
+Advanced and Enhanced levels. No additional licence required.
+-----------------------------------------------------------------
+Catalogue no: PRO-BCR-077
+Service name: Business Continuity Restore Drill
+Section: Catalogue section 7.3
+Scope: End-to-end execution of the backup restore scenario in a controlled
+maintenance window, timing measurement and a findings report.
+Eligibility: Offered against proactive hours at Unified Support Advanced and
+Enhanced levels. A separate maintenance window must be scheduled.
+-----------------------------------------------------------------
+
+NOTE: This catalogue contains no proactive service definition covering SAP
+S/4HANA migration or Copilot for Security.

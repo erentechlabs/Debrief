@@ -1,0 +1,50 @@
+=== MEETING TRANSCRIPT (SYNTHETIC TEST DATA) ===
+Meeting: Northwind Energy Holding - Technical Status Review
+Date: 11 September 2026, 14:00-14:52 (Microsoft Teams)
+Attendees: Elena Faber (Northwind, IT Director), Oscar Lindqvist (Northwind,
+Infrastructure Manager), Martin Reyes (Microsoft, CSA),
+Dana Cole (Microsoft, CSAM)
+
+[00:02] Dana Cole: Today we want to go through the August outage and the
+review we ran afterwards.
+
+[00:04] Oscar Lindqvist: On the 19th of August at around 20:10 the
+authentication service in the production environment was unavailable for
+roughly 3 hours and 40 minutes. The dealer portal and the field application
+were both affected.
+
+[00:07] Martin Reyes: The review produced three core findings. First, the
+identity infrastructure depends on a single region and there is no automatic
+failover to a second region. Second, multi-factor authentication is not
+enforced on 14 privileged accounts, and 6 of those hold a permanent
+administrator role. Third, backups are being taken but no restore drill has
+been carried out in the last 11 months.
+
+[00:15] Elena Faber: The board will ask me how we know this will not happen
+again. I need a concrete plan in hand.
+
+[00:18] Martin Reyes: On the identity side, a second-region failover can be
+designed. That needs a design workshop drawn from the proactive hours. On
+privileged accounts, removing the permanent roles and moving to time-bound
+elevation is the fastest win.
+
+[00:26] Oscar Lindqvist: The restore drill needs its own window, we cannot
+run it in production.
+
+[00:31] Elena Faber: On budget, we cannot purchase new licences right now.
+We need to stay inside the existing agreement until the 2027 budget.
+
+[00:38] Martin Reyes: Understood, then let us keep our recommendations
+limited to the proactive services already inside Unified.
+
+[00:41] Dana Cole: I will confirm the remaining unplanned hours in writing.
+
+[00:44] Elena Faber: The SAP S/4HANA migration is also on our agenda, but
+that is a separate topic. Please leave it off the list for now; we will
+discuss it once it is clearer.
+
+[00:49] Martin Reyes: One last point. Monitoring alerts are firing but nobody
+is watching them. During the August outage the alert was raised at 20:12 and
+the team noticed at 21:05.
+
+[00:52] End of meeting.

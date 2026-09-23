@@ -1,0 +1,49 @@
+=== TOPLANTI TRANSKRIPTI (SENTETIK TEST VERISI) ===
+Toplanti: Kuzey Enerji Holding - Teknik Durum Degerlendirme
+Tarih: 11 Eylul 2026, 14:00-14:52 (Teams)
+Katilimcilar: Selin Barut (Kuzey Enerji, IT Direktoru), Onur Kaplan (Kuzey
+Enerji, Altyapi Yoneticisi), Mert Yildizhan (Microsoft, CSA),
+Deniz Aksoy (Microsoft, CSAM)
+
+[00:02] Deniz Aksoy: Bugunku amacimiz Agustos ayinda yasanan kesintiyi ve
+sonrasinda yaptigimiz incelemeyi konusmak.
+
+[00:04] Onur Kaplan: Agustos'un 19'unda aksam 20:10 civarinda uretim
+ortamindaki kimlik dogrulama servisi yaklasik 3 saat 40 dakika erisilemez
+oldu. Bayi portali ve saha uygulamasi etkilendi.
+
+[00:07] Mert Yildizhan: Incelemede uc temel bulgu cikti. Birincisi, kimlik
+altyapisinda tek bir bolgeye bagimlilik var, ikinci bolgeye otomatik
+devretme yok. Ikincisi, ayricalikli hesaplarin 14'unde cok faktorlu
+dogrulama zorunlu degil ve bunlarin 6'si kalici yonetici rolune sahip.
+Ucuncusu, yedeklemeler aliniyor ama son 11 ayda hic geri donus tatbikati
+yapilmamis.
+
+[00:15] Selin Barut: Yonetim kurulu bana "bir daha olmayacagini nasil
+biliyoruz" diye soracak. Elimde somut bir plan olmasi lazim.
+
+[00:18] Mert Yildizhan: Kimlik tarafinda ikinci bolge devretmesi
+kurulabilir. Bunun icin proaktif saatlerden bir tasarim calistayi
+yapmamiz gerekir. Ayricalikli hesap tarafinda ise kalici rolleri
+kaldirip zaman sinirli yukseltmeye gecmek en hizli kazanim.
+
+[00:26] Onur Kaplan: Yedek geri donus tatbikati icin ayri bir pencere
+lazim, uretimde yapamayiz.
+
+[00:31] Selin Barut: Butce tarafinda su an yeni lisans alamayiz, 2027
+butcesine kadar mevcut sozlesme icinde kalmamiz gerekiyor.
+
+[00:38] Mert Yildizhan: Anladim, o zaman onerilerimizi mevcut Unified
+kapsamindaki proaktif hizmetlerle sinirli tutalim.
+
+[00:41] Deniz Aksoy: Kalan planlanmamis saat sayisini ben netlestirip
+yazili gondereyim.
+
+[00:44] Selin Barut: SAP S/4HANA gecisi de gundemimizde ama o ayri bir
+konu, simdilik listeye almayin, netlesince konusuruz.
+
+[00:49] Mert Yildizhan: Son olarak, izleme tarafinda uyarilar var ama
+kimse bakmiyor. Agustos kesintisinde uyari 20:12'de dusmus, ekip
+21:05'te farketmis.
+
+[00:52] Toplanti sonu.
