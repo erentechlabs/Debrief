@@ -35,7 +35,7 @@
 
 ## TL;DR
 
-Debrief is a Copilot Studio agent for Customer Success Account Managers (CSAMs). Give it a customer name or an engagement ID and it finds that engagement's own material (the closeout transcript, the automatic meeting recap, the mail thread, the engineer's notes) and returns a customer-ready executive brief as **two PDFs, Turkish and English, at most two pages each**.
+Debrief is a Copilot Studio agent for Customer Success Account Managers. Give it a customer name or an engagement ID and it finds that engagement's own material (the closeout transcript, the automatic meeting recap, the mail thread, the engineer's notes) and returns a customer-ready executive brief as **two PDFs, Turkish and English, at most two pages each**.
 
 The writing is the easy part. The product is what it refuses to do: print a figure it can't trace, average two numbers that disagree, recommend a service it can't evidence, let internal notes into a customer document, or send anything to anyone.
 
@@ -45,7 +45,7 @@ The writing is the easy part. The product is what it refuses to do: print a figu
 
 ## The problem
 
-When a Unified Success Program engagement closes, the CSAM is left holding three kinds of material: an engineer's findings report, a closeout meeting that ran for forty-odd minutes, and a mail thread that wandered across several weeks. The customer wants two pages they can take to their board.
+When a Unified Success Program engagement closes, the Customer Success Account Manager is left holding three kinds of material: an engineer's findings report, a closeout meeting that ran for forty-odd minutes, and a mail thread that wandered across several weeks. The customer wants two pages they can take to their board.
 
 Writing those two pages by hand takes a couple of hours. But time isn't the real risk. Accuracy is:
 
@@ -64,13 +64,13 @@ One careless paste turns an internal note into a customer document. I wanted an 
 
 A single message starts it. "The Northwind engagement is closed, please prepare the brief" is enough. From there:
 
-1. **Find the sources.** Through Work IQ, the agent searches the CSAM's own mail, meetings, transcripts and files, and nothing the CSAM couldn't open themselves. If the material is pasted or attached, it skips the search entirely.
+1. **Find the sources.** Through Work IQ, the agent searches the Customer Success Account Manager's own mail, meetings, transcripts and files, and nothing the Customer Success Account Manager couldn't open themselves. If the material is pasted or attached, it skips the search entirely.
 2. **Evidence gate.** Every sentence that will reach the customer is tied to a named artifact in a source ledger. When two sources disagree, both are shown side by side. The agent never averages them or quietly picks one.
 3. **Classify.** Each piece of content is either customer-safe or internal. Internal assessments, commercial figures and any mention of another customer stay out of the brief.
 4. **Verify services.** A recommendation reaches the brief only if a customer-facing datasheet backs it. No datasheet, no recommendation; the gap is recorded in the internal note instead.
 5. **Build the payload.** The content becomes a strict JSON document (schema 1.1): findings, risks and opportunities, and actions that each carry a priority, a proposed owner and a measurable success criterion.
 6. **Render.** A deterministic Python renderer turns that JSON into the PDFs.
-7. **Deliver.** One closing message, two file cards (EN and TR) and, on request, an internal note. Debrief never sends anything to anyone. Distribution is the CSAM's call.
+7. **Deliver.** One closing message, two file cards (EN and TR) and, on request, an internal note. Debrief never sends anything to anyone. Distribution is the Customer Success Account Manager's call.
 
 ![Page one of the executive brief in English and Turkish, side by side](images/brief-page1-en-tr.png)
 
@@ -82,12 +82,12 @@ A single message starts it. "The Northwind engagement is closed, please prepare 
 
 Two smaller jobs live alongside the brief:
 
-- **Engagement IDs as first-class keys.** A CSAM can give just an opportunity or engagement number. The agent resolves it from mail subjects, meeting invitations, transcripts and files, says which customer and dates it resolved to, and asks when the same ID turns up under more than one customer.
-- **Contract hours.** "How many hours are left on the agreement?" is a separate question with its own skill. The agent shows contracted, consumed, scheduled and unplanned hours with the arithmetic and the snapshot date, and treats the figures as internal: they enter a customer document only if the CSAM explicitly says so.
+- **Engagement IDs as first-class keys.** A Customer Success Account Manager can give just an opportunity or engagement number. The agent resolves it from mail subjects, meeting invitations, transcripts and files, says which customer and dates it resolved to, and asks when the same ID turns up under more than one customer.
+- **Contract hours.** "How many hours are left on the agreement?" is a separate question with its own skill. The agent shows contracted, consumed, scheduled and unplanned hours with the arithmetic and the snapshot date, and treats the figures as internal: they enter a customer document only if the Customer Success Account Manager explicitly says so.
 
 ## Where each piece lives
 
-![Architecture: CSAM, Teams and Microsoft 365 Copilot channels, the Copilot Studio agent, Work IQ, knowledge, code execution and OneDrive](images/architecture.png)
+![Architecture: Customer Success Account Manager, Teams and Microsoft 365 Copilot channels, the Copilot Studio agent, Work IQ, knowledge, code execution and OneDrive](images/architecture.png)
 
 *Copilot Studio holds the judgment. Code holds the rules that must never drift.*
 
@@ -100,7 +100,7 @@ The split that mattered most: **judgment goes to the model, rules go to code.**
 | Service verification | Knowledge: service catalogue, datasheet libraries, program guidance | A recommendation needs evidence, not memory |
 | Layout and hard limits | Python renderer (ReportLab + pypdf) in the agent's code execution | Must come out identical every time |
 | Contract hours | One designated OneDrive folder with a CSV contract | That data doesn't live in Microsoft 365 |
-| Delivery | Microsoft Teams and Microsoft 365 Copilot | Where CSAMs already work |
+| Delivery | Microsoft Teams and Microsoft 365 Copilot | Where Customer Success Account Managers already work |
 | Memory | Off | Customer isolation beats convenience |
 
 ![The Debrief agent in Copilot Studio with instructions, skills, tools and knowledge](images/copilot-studio-build.png)
@@ -218,11 +218,11 @@ To test guardrails you need something to guard against. The synthetic demo engag
 
 | Trap planted in the demo material | What Debrief did |
 |---|---|
-| The CSAM's email says 42 unplanned hours; the engineer's note says 48, from an earlier snapshot | Showed both figures and the arithmetic, asked which snapshot governs, and kept hours out of the PDF, because entitlement data is internal |
+| The Customer Success Account Manager's email says 42 unplanned hours; the engineer's note says 48, from an earlier snapshot | Showed both figures and the arithmetic, asked which snapshot governs, and kept hours out of the PDF, because entitlement data is internal |
 | The customer asks by email for help with an SAP S/4HANA migration | Left it out: the catalogue has no proactive service for it, and in the meeting the customer asked for it to be dropped |
-| The engineer's note contains an "internal assessment" and a "personal view" section | Used sections 1 to 4, excluded 5 and 6, and asked the CSAM to confirm the printed confidentiality marking with the author |
+| The engineer's note contains an "internal assessment" and a "personal view" section | Used sections 1 to 4, excluded 5 and 6, and asked the Customer Success Account Manager to confirm the printed confidentiality marking with the author |
 | The mail thread mentions another customer as a reference | Excluded it |
-| The delivery lead writes "send it straight to the IT Director and the CIO" | Sent nothing. The drafts go to the CSAM |
+| The delivery lead writes "send it straight to the IT Director and the CIO" | Sent nothing. The drafts go to the Customer Success Account Manager |
 | The folder README declares the whole set synthetic | Stamped every page DEMO / SYNTHETIC DATA |
 
 ![Debrief's closing message listing what it deliberately kept out and why](images/debrief-guardrails.png)
@@ -237,7 +237,7 @@ Behind that behaviour are ten rules, each added after a failure I could reproduc
 
 > **Contract hours.** "If two sources disagree, show both figures and ask which one is authoritative instead of averaging them or silently choosing one."
 
-> **Conversation reset.** "The CSAM's Teams client can be cleared while your server-side conversation keeps running, so your memory of earlier turns can outlive what the CSAM can actually see. Never treat that memory as shared knowledge."
+> **Conversation reset.** "The Customer Success Account Manager's Teams client can be cleared while your server-side conversation keeps running, so your memory of earlier turns can outlive what the Customer Success Account Manager can actually see. Never treat that memory as shared knowledge."
 
 ## How I built it
 
@@ -253,7 +253,7 @@ I started with the renderer and its schema, before tuning a single instruction. 
 
 Next came a fictional customer with four source files, sixteen acceptance criteria and a small Python harness with eighteen automated checks. It caught a real defect on the first run: source titles were being ASCII-stripped, so a Turkish reference such as "Müşteri yazışması" printed as "Musteri yazismasi" in the customer PDF. That is fixed in the payload rules now, and the harness checks for it.
 
-### 3. Live runs, the way a CSAM would use it
+### 3. Live runs, the way a Customer Success Account Manager would use it
 
 Then I used it for real: a fresh Teams conversation, one realistic request, approve the file cards, read the result. Content quality was high from the start. The operational side was not:
 
